@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,17 +11,18 @@ namespace FindAllPermutations
     {
         static void Main(string[] args)
         {
-            int[] nums = { 1, 2, 3 };
-            //char[] charArry = str.ToCharArray();
-            Permute(nums, 0, nums.Length - 1);
-            Console.ReadKey();
+            
+
+            ArrayList al = FindAllPermulations();
         }
 
-        static void Permute(int[] arry, int i, int n)
+        static void Permute(char[] arry, int i, int n)
         {
             int j;
             if (i == n)
-                Console.WriteLine(new int);
+            {
+
+            }  
             else
             {
                 for (j = i; j <= n; j++)
@@ -32,12 +34,52 @@ namespace FindAllPermutations
             }
         }
 
-        static void Swap(ref int a, ref int b)
+        static void Swap(ref char a, ref char b)
         {
-            int tmp;
+            char tmp;
             tmp = a;
             a = b;
             b = tmp;
         }
+
+        static ArrayList FindAllPermulations()
+        {
+            string str = "abc";
+            ArrayList arrayList = new ArrayList();
+            Permutations("", str, arrayList);
+            return arrayList;
+        }
+
+        private static void GetAllPerms(string str, string prefix, ArrayList arrayList)
+        {
+            if(str.Length == 0)
+            {
+                arrayList.Add(prefix);
+            }
+            else
+            {
+                for(int i=0;i<str.Length; i++)
+                {
+                    GetAllPerms(str.Substring(0, i) + str.Substring(i + 1), prefix + str[i], arrayList);
+                }
+            }            
+        }
+
+        private static void Permutations(string prefix, string str, ArrayList results)
+        {
+            if (str.Length == 0)
+            {
+                results.Add(prefix);
+            }
+            else
+            {
+                for (int i = 0; i < str.Length; i++)
+                {
+                    string rem = str.Substring(0, i) + str.Substring(i + 1);
+                    Permutations(prefix + str[i], rem, results);
+                }
+            }
+        }
+
     }
 }

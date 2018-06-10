@@ -12,7 +12,7 @@ namespace StringCompression
     {
         static void Main(string[] args)
         {
-            string s = "SREEEDDHHAAR";//"WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW";           
+            string s = "aabcccccaaa";//"WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW";           
 
 
             //Method 2 - Santhoshi 
@@ -93,7 +93,7 @@ namespace StringCompression
             char c = charArray[0];
             for (int i=1; i<=charArray.Length; i++)
             {
-                if (i!= charArray.Length && s[i] == c)
+                if (i!= charArray.Length && c== s[i])
                 {
                     count++;
                 }
@@ -101,7 +101,7 @@ namespace StringCompression
                 {
                     sb.Append(string.Concat(c, count));
                     if (i != charArray.Length)
-                        c = charArray[i];
+                        c = s[i];
                     count = 1;
                 }                
             }

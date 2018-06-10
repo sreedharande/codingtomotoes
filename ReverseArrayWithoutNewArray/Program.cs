@@ -10,13 +10,15 @@ namespace ReverseArrayWithoutNewArray
     {
         static void Main(string[] args)
         {
-            int[] a = { 2, 3, 5, 7, 9, 10 };
+            //int[] a = { 2, 3, 5, 7, 9, 10 };
+            string s = "once upon a time";
+            char[] a = s.ToCharArray();
             int midpoint = a.Length / 2;
             for(int i=0;i<midpoint;i++)
             {
                 int otherend = a.Length - i - 1;
 
-                int temp = a[otherend];
+                char temp = a[otherend];
                 a[otherend] = a[i];
                 a[i] = temp;
             }
