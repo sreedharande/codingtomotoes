@@ -85,6 +85,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraySelfProduct", "ArraySe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeTwoSortedArrays", "MergeTwoSortedArrays\MergeTwoSortedArrays.csproj", "{7040187A-288A-4008-B28D-4DB0C2ABBAA0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strings-LeetCode", "Strings-LeetCode", "{C01625C6-B84C-470C-BFFC-24DE4B4C3B99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestCommonPrefix", "LongestCommonPrefix\LongestCommonPrefix.csproj", "{4D5CF35E-C180-4679-9B88-DCEA935F96B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -243,6 +247,10 @@ Global
 		{7040187A-288A-4008-B28D-4DB0C2ABBAA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7040187A-288A-4008-B28D-4DB0C2ABBAA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7040187A-288A-4008-B28D-4DB0C2ABBAA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D5CF35E-C180-4679-9B88-DCEA935F96B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D5CF35E-C180-4679-9B88-DCEA935F96B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D5CF35E-C180-4679-9B88-DCEA935F96B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D5CF35E-C180-4679-9B88-DCEA935F96B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -265,6 +273,7 @@ Global
 		{5CF3608F-9D0B-4237-A6DA-7884A4994517} = {9A094FB2-289B-43F1-88ED-399C9F35B957}
 		{E1954474-2333-4369-B176-6241C7E414ED} = {9A094FB2-289B-43F1-88ED-399C9F35B957}
 		{7040187A-288A-4008-B28D-4DB0C2ABBAA0} = {9A094FB2-289B-43F1-88ED-399C9F35B957}
+		{4D5CF35E-C180-4679-9B88-DCEA935F96B4} = {C01625C6-B84C-470C-BFFC-24DE4B4C3B99}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C133404C-2247-43AF-A860-71D23DF4EEFA}
